@@ -10,26 +10,28 @@ using System;
 class HelloWorld {
   static void Main() {
       
-      double primeiraNota;
-      double segundaNota;
-      double result;
-      
+     double primeiraNota;
+double segundaNota;
+double result;
+
 
 Console.WriteLine("Calculo de Médias");
 
 Console.WriteLine("Digite a Primeira Nota: ");
-primeiraNota = double.Parse(Console.ReadLine());
+primeiraNota = double.Parse(Console.ReadLine().Replace('.', ','));
 // Console.WriteLine("Primeira nota definida é : " +primeiraNota.ToString("0.00000"));
 
 
 Console.WriteLine("Digite a Segunda Nota: ");
-segundaNota = double.Parse(Console.ReadLine());
+segundaNota = double.Parse(Console.ReadLine().Replace('.', ','));
 // Console.WriteLine("Segunda nota definida é : " +segundaNota.ToString("0.00000"));
 
 
-result = primeiraNota + segundaNota/2;
+result = (primeiraNota*3.5 + segundaNota*7.5) / 11;
 
-Console.WriteLine("MÉDIA = "+result.ToString("0.00000"));
+Console.WriteLine("MÉDIA = " + result.ToString("0.00000"));
+
+
 
 
   }
