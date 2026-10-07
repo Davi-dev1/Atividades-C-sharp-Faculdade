@@ -24,15 +24,15 @@ double C = double.Parse(linha1[2], CultureInfo.InvariantCulture);
 	• linha1[0] vira "2.5"
 	• linha1[1] vira "4.0"
 	• linha1[2] vira "6.5"
-csharp
+
 double A = Convert.ToDouble(linha1[0]);
 
 • O que faz: Pega o primeiro texto da lista (linha1[0], que é "2.5"), transforma ele em um número que aceita casas decimais (double) e guarda na variável A.
-csharp
+
 double B = Convert.ToDouble(linha1[1]);
 
 • O que faz: Faz exatamente a mesma coisa com o segundo texto (linha1[1], que é "4.0"), transformando-o em número e guardando na variável B.
-csharp
+
 double C = double.Parse(linha1[2], CultureInfo.InvariantCulture);
 
 • O que faz: Transforma o terceiro texto (linha1[2], que é "6.5") em número e guarda na variável C.
