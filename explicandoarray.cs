@@ -37,4 +37,19 @@ double C = double.Parse(linha1[2], CultureInfo.InvariantCulture);
 
 • O que faz: Transforma o terceiro texto (linha1[2], que é "6.5") em número e guarda na variável C.
 • O segredo do CultureInfo.InvariantCulture: Isso aqui serve para o programa não dar erro por causa do ponto (.). No Brasil, usamos vírgula para decimais (6,5), mas na programação usa-se o ponto (6.5). Esse comando avisa o C#: "Ei, ignore a configuração do computador do usuário e aceite o ponto como separador decimal".
+
+
+
+
+
+
+   
+      string[] valores =  Console.ReadLine().Split(' ');
+  int v1 = int.Parse(valores[0]);
+  int v2 = int.Parse(valores[1]);
+  int v3 = int.Parse(valores[2]);
+   Console.WriteLine("Valores : {0},{1},{2}",v1,v2,v3);
+
+
+
 */
